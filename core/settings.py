@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-2me%54_m481*_e033+eb91j5fi0k10^@^2^1^-uqtcz9_*f84i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['wall-mart-api.onrender.com', '127.0.0.1','jumia-clone-api-11vb.onrender.com']
+ALLOWED_HOSTS = ['jumiaonline-api.onrender.com', '127.0.0.1','jumia-clone-api-11vb.onrender.com']
 
 # Application definition
 
@@ -59,7 +59,7 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 
 # # Configure CORS
 # CORS_ALLOWED_ORIGINS = [
-#     "https://www.jumiaonlineshopping.net",  # Add your frontend's origin here
+#     "https://www.onlineshopjumia.org",  # Add your frontend's origin here
 #     # Add any other origins you want to allow
 # ]
 
@@ -120,21 +120,16 @@ DATABASES = {
     }
 }
 
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',  # Specify the database engine
-#         'NAME': 'jumioihg_jumiaonlineshopping.netDB',            # Name of your MySQL database
-#         'USER': 'jumioihg_ekenehanson',        # Your database user
-#         'PASSWORD': 'VJt8Gxn3mt3DCFi',  # Your database password
-#         'HOST': 'localhost',                    # Your database host (use 'localhost' if it's on the same server)
-#         'PORT': '3306',                         # Default MySQL port
-#     }
-# }
-
-
-# pg_dump -h dpg-craktgq3esus73a8afc0-a.oregon-postgres.render.com  -U jumia_clone_user  -p 5432 -W jumia_clone  > database_backup.sqljumia_clone_user
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'jumia_onlinedb',
+        'USER': 'jumia_onlinedb_user',
+        'PASSWORD': 'yQDb9BhqyxjgNNIzsFb6vnGCCDYJQT08',
+        'HOST': 'dpg-csloc7d6l47c73c8k000-a.oregon-postgres.render.com',
+        'PORT': '5432',
+    }
+}
 
 
 # Password validation
